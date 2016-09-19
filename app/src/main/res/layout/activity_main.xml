@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.haiyuan1995.multidown.MainActivity">
+
+    <EditText
+        android:id="@+id/edit_url"
+        android:maxLines="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多线程下载" />
+
+    <ProgressBar
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0%"
+        android:id="@+id/textView"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="测试下载链接（掘金app）:"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://119.147.33.15/imtt.dd.qq.com/16891/01F448E57FE11D1065DCCED416D9854C.apk?mkey=57dfb61228684c84
+        f=9555c=0fsname=com.daimajia.gold_3.6.1_102.apkhsr=4d5sp=.apk"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
